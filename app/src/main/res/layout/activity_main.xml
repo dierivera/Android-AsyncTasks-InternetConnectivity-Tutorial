@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dierivera.ubp.unidaduno.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_activity_title"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tvSiteURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_activity_url_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/etSiteURL"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/url_example"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_download"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvContentDownloaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_activity_url_content_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:id="@+id/etContentDownloaded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/main_activity_edittext_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="vertical"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

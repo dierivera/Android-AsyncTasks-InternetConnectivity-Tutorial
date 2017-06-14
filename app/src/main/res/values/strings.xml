@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Unidad Uno</string>
+    <string name="main_activity_title">Actividad</string>
+    <string name="main_activity_url_text">Ingrese una URL</string>
+    <string name="main_activity_url_content_text">Contenido descargado</string>
+    <string name="url_example">Ejemplo: https://www.google.co.cr</string>
+    <string name="main_activity_edittext_content">Aqui va el contenido del sitio web</string>
+    <string name="btn_download">Descargar</string>
+</resources>
